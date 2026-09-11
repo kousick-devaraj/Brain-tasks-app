@@ -10,8 +10,6 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
-<<<<<<< HEAD
-=======
       - which aws && aws --version
       - which docker && docker --version
       - AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
