@@ -1,4 +1,5 @@
-FROM nginx:alpine
+# Pull image from aws repo
+FROM public.ecr.aws/nginx/nginx:alpine
 
 # Copy pre-compiled dist folder to Nginx standard HTML root
 COPY dist /usr/share/nginx/html
